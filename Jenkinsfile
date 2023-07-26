@@ -2,19 +2,19 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('A') {
             steps {
-                echo 'Building..'
+                echo 'today is ($date) Building..'
             }
         }
-        stage('Test') {
+        stage('B') {
             steps {
-                echo 'Testing..'
+                echo 'HEEEPLP Testing..'
             }
         }
-        stage('Deploy') {
+        stage('C') {
             steps {
-                echo 'Deploying....'
+                echo 'aksdflmasdfakg....'
             }
         }
     }

@@ -9,17 +9,19 @@ pipeline {
      
 stage('apt update') {
             steps {
-                sh 'apt update -y'
+                sh 'sudo apt update -y'
     }
 
 }
 
-
-
+stage ('docker repo') {
+steps {
+sh 'sudo apt install apt-transport-https ca-certificates curl software-properties-common'
+}}
 
    stage('docker install') {
             steps {
-                sh 'apt install docker -y'
+                sh 'sudo apt install docker -y'
     }
 
 }

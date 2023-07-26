@@ -12,7 +12,7 @@ pipeline {
                 sh 'apt install docker -y'
     }
 
-
+}
 
 
    stage('B') {

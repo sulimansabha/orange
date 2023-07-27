@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: clouddtest
+  name: clouddtest
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: clouddtest
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: clouddtest
+    spec:
+      containers:
+      - image: sulimansabha/orange-httpd:sss
+        name: orange-httpd
+        resources: {}
+status: {}

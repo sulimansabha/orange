@@ -1,0 +1,845 @@
+    1  hostnamectl ?
+    2  hostnamectl --h
+    3  hostnamectl --help
+    4  hostnamectl hostname DevOps
+    5  reboot
+    6  passwd
+    7  vi /etc/login.defs 
+    8  vi /etc/ssh/ssh_config
+    9  vi /etc/gdm3/custom.conf 
+   10  vi /etc/pam.d/gdm-password 
+   11  reboot
+   12  ip a
+   13  ping google.com
+   14  systemctl stop firewalld
+   15  systemctl stop firewall
+   16  systemctl status firewall
+   17  systemctl status fire
+   18  apt update
+   19  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+   20  sudo apt install apt-transport-https ca-certificates curl software-properties-common
+   21  pkill -9 2427
+   22  pkill -9 -i 2427
+   23  sudo apt install apt-transport-https ca-certificates curl software-properties-common
+   24  pkill -h
+   25  pkill -9 2427
+   26  sudo apt install apt-transport-https ca-certificates curl software-properties-common
+   27  reboot
+   28  sudo apt install apt-transport-https ca-certificates curl software-properties-common
+   29  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+   30  echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+   31  sudo apt update
+   32  apt-cache policy docker-ce
+   33  sudo apt install docker-ce
+   34  systemctl status docker
+   35  docker -v
+   36  docker container ls
+   37  docker images
+   38  docker pull ubuntu
+   39  docker images
+   40  docker inspect image 5a81c4b8502e
+   41  docker container ls
+   42  docker run ubuntu
+   43  docker ps
+   44  docker container ls
+   45  docker container ls -a
+   46  docker run httpd
+   47  docker container ls -a
+   48  docker run -d 
+   49  docker run -d httpd
+   50  docker container ls -a
+   51  docker ls
+   52  docker container ls
+   53  docker container inspect 37c32b8e0241
+   54  docker run httpd -d
+   55  docker run -d httpd
+   56  docker container ls
+   57  docker rm 3ba985f572fc
+   58  docker rm -f 3ba985f572fc
+   59  docker container ls
+   60  docker stop 3ba985f572fc
+   61  docker container ls
+   62  docker stop 9786b36e63da
+   63  docker container ls -a
+   64  docker start 9786b36e63da
+   65  docker container ls -a
+   66  docker exec -it 9786b36e63da
+   67  docker exec -it 9786b36e63da bash
+   68  sudo ufw status
+   69  sudo ufw disable
+   70  ip a
+   71  docker run -d  -p 8080:80 --name Test nginx
+   72  df -Th
+   73  docker run -p 8888:80 -v suleiman"
+   74  docker run -d -p 8888:80 -v suleiman:/mnt -name testVolume httpd
+   75  docker run -d -p 8888:80 -v suleiman:/mnt name testVolume httpd
+   76  docker run -d -p 8888:80 -v suleiman:/mnt --name testVolume httpd
+   77  docker exec b85f2d778 bash
+   78  docker exec -it b85f2d778 bash
+   79  cd /var/lib/docker/volumes/
+   80  ls
+   81  cd suleiman/
+   82  ls
+   83  cd _data/
+   84  ls
+   85  exit
+   86  vim Dockerfile 
+   87  docker build -t ubuntu:v2 .
+   88  vi Dockerfile 
+   89  vim Dockerfile 
+   90  docker build -t ubuntu:v2 .
+   91  vim Dockerfile 
+   92  docker build -t ubuntu:v2 .
+   93  [200~curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest_amd64.deb~
+   94  curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest_amd64.deb~
+   95  ls
+   96  sudo dpkg -i minikube_latest_amd64.de
+   97  reboot
+   98  rmdir -f /var/lib/docker/volumes/suleiman/
+   99  rm -f /var/lib/docker/volumes/suleiman/
+  100  rmdir -f /var/lib/docker/volumes/suleiman/
+  101  rmdir  /var/lib/docker/volumes/suleiman/
+  102  rmdir  /var/lib/docker/volumes/suleiman/ -force
+  103  rmdir  /var/lib/docker/volumes/suleiman/ --force
+  104  rmdir  --h
+  105  rmdir  /var/lib/docker/volumes/suleiman/ --i
+  106  cd /var/lib/docker/volumes/
+  107  ls
+  108  rmdir -R suleiman/
+  109  rm -R suleiman/
+  110  ;d
+  111  rmdir suleiman/
+  112  ls
+  113  docker container ls
+  114  docker exec -it  b85f2d778 bash
+  115  ls
+  116  cd/
+  117  cd .
+  118  cd /
+  119  ls
+  120  docker login
+  121  ls
+  122  cd /home/
+  123  ls
+  124  cd ~
+  125  ls
+  126  vi Dockerfile
+  127  vim Dockerfile
+  128  apt install vim
+  129  vim Dockerfile
+  130  docker build -t ubuntu:v1 .
+  131  vim Dockerfile
+  132  docker build -t ubuntu:v1 .
+  133  docker run -d httpd
+  134  docker container -it bash a603f2d227
+  135  docker exec -it bash a603f2d227
+  136  docker exec -it a603f2d227 bash
+  137  docker ls
+  138  docker container ls
+  139  docker run -d ubuntu
+  140  docker exec -it a444ffc40  bash
+  141  docker exec -it a444ffc40 bash
+  142  docker run -d httpd
+  143  docker exec -it a444ffc40 bash
+  144  docker exec -it a444ffc40  bash
+  145  docker exec -it a603f2d227 bash
+  146  vim Dockerfile 
+  147  docker build -t ubuntu:v1 .
+  148  docker image ls
+  149  docker run -d -p 8080:80 ubuntu:v1 --name testapache
+  150  docker run -d  ubuntu:v1 -p 8080:80  --name testapache
+  151  docker run -d  ubuntu:v1   --name testapache -p 8080:80
+  152  docker run -d  ubuntu:v1   --name testapache -p 8080 : 80
+  153  history
+  154  cat Dockerfile 
+  155  docker run -d --name testapache -p 8080:80 ubuntu:v1
+  156  docker run -d --name testapache -p 9090:80 ubuntu:v1
+  157  docker run -d --name testapachev1 -p 9090:80 ubuntu:v1
+  158  docker container ls
+  159  for i in $( docker container ls -qa ) | do docker container rm -rf $i ; done
+  160  for i in $( docker container ls -qa ) ; do docker container rm -rf $i ; done
+  161  for i in $( docker container ls -qa ) ; do docker container rm -f $i ; done
+  162  docker container ls
+  163  docker run -d --name testapachev2 -p 9091:80 ubuntu:v1
+  164  docker exec -it  a444ffc40 bash
+  165  docker container ls -a
+  166  vi Dockerfile 
+  167  docker build -t ubuntu:v1 .
+  168  docker build -t httpd
+  169  docker run -d httpd 
+  170  docker exec -it a444ffc40 bash
+  171  docker exec -it 03e34370 bash
+  172  docker container -ls
+  173  docker container ls
+  174  docker container ls -a
+  175  docker exec CMD httpd -k start 03e343709e6d
+  176  docker start  exec CMD httpd -k start 03e343709e6d
+  177  sudo dpkg -i minikube_latest_amd64.de
+  178  ls
+  179  sudo dpkg -i minikube_latest_amd64.deb~ 
+  180  sudo dpkg -i minikube_latest_amd64.deb~  --install
+  181  curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+  182  sudo install minikube-linux-amd64 /usr/local/bin/minikube
+  183  minikube cubectl get nodes
+  184  minikube kubectl get nodes
+  185  alias kubectl ="minikube kubectl"
+  186  alias kubectl =" minikube kubectl "
+  187  echo $kubectl
+  188  echo kubectl
+  189  echo $kubectl
+  190  minikube start
+  191  su - suleiman
+  192  apth install kvm2
+  193  apt install kvm2
+  194  apt install virsh
+  195  apt install podman
+  196  kubectl start
+  197  minikube start
+  198  minikube start --force
+  199  kubectl get node
+  200  alias ?
+  201  alias help
+  202  alias --help
+  203  alias kubectl=minikube kubectl
+  204  alias kubectl='minikube kubectl'
+  205  alias
+  206  aliases
+  207  alias
+  208  alias hsow
+  209  show
+  210  alias hsow
+  211  alias show
+  212  alias --h
+  213  kubectl get node
+  214  kubectl create deployment nginx --image=nginx --replicas=4
+  215  kubectl create deployment nginx image=nginx --replicas=4
+  216  kubectl create deployment nginx image=nginx replicas=4
+  217  kubectl create deployment nginx -image=nginx replicas=4
+  218  kubectl create deployment nginx --image= nginx replicas=4
+  219  kubectl create deployment nginx --image = nginx replicas=4
+  220  kubectl create deployment nginx --image nginx replicas=4
+  221  minikuve kubectl create deployment nginx --image=nginx replicas=4
+  222  minikube kubectl create deployment nginx --image=nginx replicas=4
+  223  minikube kubectl create deployment nginx --IMAGE=nginx replicas=4
+  224  minikube kubectl create deployment nginx IMAGE=nginx replicas=4
+  225  minikube kubectl create deployment nginx image=nginx replicas=4
+  226  minikube kubectl create deployment nginx --image=nginx replicas=4
+  227  minikube kubectl create deployment  --image=nginx replicas=4
+  228  minikube kubectl deployment create   --image=nginx replicas=4
+  229  minikube kubectl deployment create   --image=nginx replicas=4 --insecure
+  230  minikube kubectl deployment create   --image=nginx replicas=4
+  231  minikube kubectl --
+  232  alias kubectl="minikube kubectl"
+  233  alias "kubectl"="minikube kubectl"
+  234  minikube kubectl deployment create   nginx --image=nginx replicas=4
+  235  minikube kubectl --
+  236  kubectl minikuve
+  237  kubectl minikbe
+  238  kubectl minikbe --
+  239  kubectl minikube --
+  240  minikube kubectl -
+  241  minikube kubectl - -
+  242  minikube kubectl ---
+  243  minikube kubectl --
+  244  kubectl --help
+  245  kubectl deployment create test --image ubuntu --replicas 4
+  246  minikube kubectl --
+  247  apt update
+  248  kubectl --
+  249  kubectl deployment create test --image ubuntu --replicas 4
+  250  reboot
+  251  kubectl deployment create test --image ubuntu --replicas 4
+  252  minikube kubectl --
+  253  alias kubectl="minikube kubectl"
+  254  kubectl deployment create test --image nginx --replicas 4
+  255  minikube kubectl deployment create test --image nginx --replicas 4
+  256  minikube deployment create test --image nginx --replicas 4
+  257  kubectl deployment create test --image nginx --replicas 4
+  258  kubectl deployment create test --Image nginx --replicas 4
+  259  kubectl deployment create test --image=nginx --replicas=
+  260  kubectl deployment create test --Image nginx --replicas 4
+  261  kubectl --
+  262  kubectl -- 
+  263  minikube kubectl  -- 
+  264  vi deployment.yaml
+  265  kubectl apply -f deployment.yaml 
+  266  vi test.yaml
+  267  kubectl apply test.yaml 
+  268  kubectl apply test.yaml -f
+  269  kubectl apply test.yaml 
+  270  minikube kubectl apply test.yaml 
+  271  minikube kubectl deployment create test --image nginx --replicas 4
+  272  minikube kubectl -- deployment create test --image nginx --replicas 4
+  273  minikube kubectl-- deployment create test --image nginx --replicas 4
+  274  minikube kubectl --deployment create test --image nginx --replicas 4
+  275  minikube kubectl -- deployment create test --image nginx --replicas 4
+  276  minikube kubectl --
+  277  vim /etc/bash.bashrc 
+  278  source  /etc/bash.bashrc 
+  279  source   <(kubectl completion bash)
+  280  kubectl create deployment nginx --image nginx --replicas 4 
+  281  history
+  282  cat vim /etc/bash.bashrc 
+  283  cat /etc/bash.bashrc 
+  284  history
+  285  kubectl create deployment nginx --image nginx --replicas 4 
+  286  ping google.com
+  287  kubectl get deployment.yaml 
+  288  kubectl get deployment
+  289  ip a
+  290  kubectl status
+  291  kubectl start
+  292  minikube status
+  293  minikube start
+  294  minikube start --force
+  295  kubectl deployment create --ima
+  296  kubectl deployment create --image httpd --replicas 4
+  297  minikube kubectl deployment create --image httpd --replicas 4
+  298  export 4
+  299  vi /etc/bash.bashrc 
+  300  reboot
+  301  kubectl deployment create --image nginx --replicas 4
+  302  kubectl deployment create nginx --image nginx --replicas  4
+  303  kubectl -- deployment create nginx --image nginx --replicas  4
+  304  minikube kubectl deployment create nginx --image nginx --replicas  4
+  305  clear
+  306  exit
+  307  minikube start
+  308  minikube start --force
+  309  minikube kubectl get nodes
+  310  alias kubectl="minikube kubectl --"
+  311  export kubectl
+  312  kubectl get nodes
+  313  clear
+  314  pwd
+  315  ls -tlrh
+  316  wget https://k8s.io/examples/controllers/nginx-deployment.yaml
+  317  clear
+  318  ls -ltrh
+  319  more nginx-deployment.yaml 
+  320* vim
+  321  history
+  322  kubectl get deployment
+  323  kubectl scale nginx-deployment --replicas 3
+  324  kubectl scale deployment nginx-deployment --replicas 5
+  325  kubectl get deployment
+  326  kubectl autoscale deployment nginx-deployment --min 7 --max 14
+  327  kubectl get deployment
+  328  kubectl get pods
+  329  kubectl get pods -o wide
+  330  kubectl exec -it nginx-deployment-cbdccf466-c46nh bash
+  331  curl 10.244.0.11 -vvv
+  332  kubectl get node
+  333  kubectl get deployment
+  334  kubectl get service
+  335  kubectl create deployment --image jenkins/jenkins --replicas 2
+  336  kubectl create deployment  cici-jenkins --image jenkins/jenkins --replicas 2
+  337  kubectl get deployment
+  338  kubectl expose deployment nginx-deployment
+  339  kubectl get service
+  340  curl 10.101.90.124:80 -vvv
+  341  kubectl expose deployment cici-jenkins --type NodePort
+  342  kubectl expose deployment cici-jenkins --type NodePort --port 5000
+  343  kubectl get service
+  344  minikube ip
+  345  kubectl create deployment  httpd  --image httpd --replicas 2
+  346  kubectl expose deployment httpd --type NodePort --port 80
+  347  kubectl get svc
+  348  curl 192.168.49.2:80 -vvv
+  349  curl 192.168.49.2:30630 --vvv
+  350  curl 192.168.49.2:30630 -vvv
+  351  df -Th
+  352  du -SH /
+  353  du -sH /
+  354  du -sh /
+  355  df -Th
+  356  cd /
+  357  ls
+  358  ls -lrtha
+  359  du -sh
+  360  du -shd
+  361  du -hd
+  362  du -h
+  363  du -h |grep G
+  364  du -h |grep "G"
+  365  du -h
+  366  du -help
+  367  du --help
+  368  du -h --threshold=1G
+  369  kubectl get deployment
+  370  kubectl del deployment cici-jenkins
+  371  kubectl delete deployment cici-jenkins
+  372  kubectl delete deployment httpd
+  373  kubectl delete deployment nginx-deployment
+  374  kubectl create deployment work --imange httpd --replicas 10
+  375  kubectl create deployment work --image httpd --replicas 10
+  376  kubectl expose deployment work
+  377  kubectl expose deployment work --port 80
+  378  kubectl get svc
+  379  kubectl delete service cici-jenkins
+  380  kubectl delete service httpd
+  381  kubectl delete service nginx-deployment
+  382  kubectl get svc
+  383  kubectl get pod
+  384  kubectl get pod -o wide
+  385  kubectl exec -it work-78d6895db4-6rhgp bash
+  386  kubectl edit deploymetn work
+  387  kubectl edit deployment work
+  388  kubectl edit service  work
+  389  kubectl get service
+  390  minikube ip
+  391  curl 192.168.49.2:30465
+  392  apt intall get
+  393  apt intall git
+  394  apt-get  intall git
+  395  apt-get  install git
+  396  apt-get install git-all 
+  397  reboot
+  398  apt-get install git-all 
+  399  df -Th
+  400  vsgs
+  401  cfs
+  402  vgs
+  403  git --v
+  404  git --version
+  405  shutdown -t 0
+  406  shutdown --now
+  407  shutdown now
+  408  df -Th
+  409  git clone https://github.com/sulimansabha/orange.git
+  410  '
+  411  ls -la
+  412  cd orange/
+  413  ls
+  414  touch test.txt
+  415  git add .
+  416  gut status
+  417  git status
+  418  git commit -m " New File Added!"
+  419  git config --global user.email "sulimansabha@hotmail.com"
+  420  git commit -m " New File Added!"
+  421  git push
+  422  touch test2.push
+  423  git push
+  424  git push origin main
+  425  ssh-keygen -t rsa
+  426  cat /root/.ssh/id_rsa.pub 
+  427  cd /
+  428  cd ..
+  429  ls
+  430  cd ..
+  431  ls
+  432  cd ~
+  433  ls
+  434  rm -if orange/
+  435  rm -rf orange/
+  436  ls
+  437  git clone https://github.com/sulimansabha/orange.git
+  438  cd orange/
+  439  ls
+  440  touch test.txt
+  441  cd ..
+  442  cd orange
+  443  git add .
+  444  git commit -m "new file addedgit add .!"
+  445  git push
+  446  cd ..
+  447  rm -rf orange
+  448  git clone git@github.com:sulimansabha/orange.git
+  449  cd orange
+  450  ls
+  451  touch test.txt
+  452  git add .
+  453  git commit -m "test"
+  454  git push
+  455  pwd
+  456  vim Dockerfile
+  457  wget https://www.facebook.com/index.html
+  458  ls
+  459  rm -rf test.txt 
+  460  ls
+  461  git add .
+  462  git status
+  463  git commit -m "create docker file" Dockerfile 
+  464  git status
+  465  git commit -m " Downloaded from internet " index.html 
+  466  git status
+  467  git commit .
+  468  git commit -m "delete" .
+  469  git status
+  470  git push
+  471  git ls-files
+  472  docker container ls
+  473  kubectl get nodes
+  474  minikube start
+  475  alias kubect ="minikube kubectl --"
+  476  alias kubectl ="minikube kubectl --"
+  477  alias kubectl = "minikube kubectl --"
+  478  alias kubectl = " minikube kubectl --"
+  479  cd ..
+  480  mkdir jenkins_home
+  481  docker run -p 8080:8080 -p 50000:50000 -v /root/jenkins_home/:/var/jenkins_home jrnkins/jenkins:lts-jdk11
+  482  docker run -p 8080:8080 -p 50000:50000 -v /root/jenkins_home/:/var/jenkins_home jenkins/jenkins:lts-jdk11
+  483  chmod 777 -R jenkins_home/
+  484  docker -d run -p 8080:8080 -p 50000:50000 -v /root/jenkins_home/:/var/jenkins_home jenkins/jenkins:lts-jdk11
+  485  docker  run -d -p 8080:8080 -p 50000:50000 -v /root/jenkins_home/:/var/jenkins_home jenkins/jenkins:lts-jdk11
+  486  docker log 815b81d8f
+  487  docker logs 815b81d8f
+  488  ip a
+  489  docker get node
+  490  docker get nodes
+  491  docker 
+  492  docker container get
+  493  docker get container
+  494  docker get containers
+  495  docker container ls
+  496  docker container ls -a
+  497  kubectl get nodes
+  498  kubectl get container
+  499  docker container ls -a
+  500  docker container ls 
+  501  kubectl   get svc 
+  502  ifco
+  503  ip a s 
+  504  netstat  
+  505  ss 
+  506  ss  | grep 8080
+  507  curl localhost:8080 
+  508  curl localhost:8080  -vvv 
+  509  kubectl   get deployment.yaml 
+  510  minikube  status 
+  511  minikube  start 
+  512  minikube  start   --force 
+  513  kubectl get svx
+  514  kubectl get svc
+  515  kubectl get nodes
+  516  kubectl get container
+  517  kubectl get containers
+  518  kubectl get ?
+  519  kubectl get --h
+  520  kubectl get --help
+  521  kubectl get pods
+  522  kubectl get deployments
+  523  kubectl delete deployment work
+  524  kubectl get pods
+  525  kubectl get nodes
+  526  kubectl get svc
+  527  kubectl delete svc work
+  528  kubectl get svc
+  529  vim Jenkinsfile
+  530  pwd
+  531  vim Jenkinsfile
+  532  mv Jenkinsfile orange/
+  533  cd orange/
+  534  ls
+  535  git add .
+  536  git commit -m "jenkinsfile"
+  537  git push
+  538  git ls
+  539  git-ls
+  540  git-lfs
+  541  git ls
+  542  git ls -lf
+  543  git ls -l
+  544  gitls
+  545  git --help
+  546  git ls-files
+  547  vim Jenkinsfile 
+  548  git add.
+  549  git add /
+  550  git add .
+  551  git commit -m "edit"
+  552  git push
+  553  history
+  554  git commit -m "edit" .
+  555  git push
+  556  docker ls
+  557  docker get container
+  558  docker container ls
+  559  docker container ls -a
+  560  docker run 815b81d8f88c
+  561  history |grep jenkins
+  562  docker  run -d -p 8080:8080 -p 50000:50000 -v /root/jenkins_home/:/var/jenkins_home jenkins/jenkins:lts-jdk11
+  563  vim Jenkinsfile 
+  564  git add .
+  565  git commit -m "pipeline test"
+  566  git push
+  567  vim Jenkinsfile 
+  568  git add .
+  569  git commit -m "docker install"
+  570  git commit -m "docker install" .
+  571  git push
+  572  vim Jenkinsfile 
+  573  git add .
+  574  git commit -m "docker install2" .
+  575  git push
+  576  vim Jenkinsfile 
+  577  git add .
+  578  git commit -m "apt update" .
+  579  git push
+  580  vim Jenkinsfile 
+  581  git add .
+  582  git commit -m "docker repo" .
+  583  git push
+  584  vim Jenkinsfile 
+  585  git add .
+  586  git commit -m "docker repo" .
+  587  git push
+  588  docker ls
+  589  docker container s
+  590  docker container ls
+  591  docker delete dc43341a15f1
+  592  docker del dc43341a15f1
+  593  docker container del dc43341a15f1
+  594  docker container rm  dc43341a15f1
+  595  docker container rm  dc43341a15f1 -f
+  596  docker service ls
+  597  minikube get svc
+  598  kubectl get svc
+  599  docker run -d-p 8080:8080 -p 50000:50000 -v /root/jenkins_home/:/var/jenkins_home yasseralhwetat/jenkins:yasser
+  600  docker run -d -p 8080:8080 -p 50000:50000 -v /root/jenkins_home/:/var/jenkins_home yasseralhwetat/jenkins:yasser
+  601  docker container ls
+  602  docker ps
+  603  docker container ls
+  604  docker container ls -a
+  605  docker container rm -f dc43341a15f1
+  606  docker container del -f dc43341a15f1
+  607  docker container kill -f dc43341a15f1
+  608  docker container kill  dc43341a15f1
+  609  docker container ls -a
+  610  docker container rm -f 815b81d8f88c
+  611  docker container rm -f 6b9dde96c945
+  612  docker container rm -f 03e343709e6d
+  613  docker container ls -a
+  614  docker container rm -f 01e7ffbf8bb4
+  615  docker container ls -a
+  616  vi Dockerfile 
+  617  vim Jenkinsfile 
+  618  shutdown -now
+  619  shutdown --now
+  620  shutdown --halt
+  621  shutdown --halt -t 0
+  622  shutdown --halt --now
+  623  shutdown --halt now
+  624  docker ls -la
+  625  docker ls -a
+  626  docker container ls -a
+  627  docker run d65e84cb83ef
+  628  docker login
+  629  docker run d65e84cb83ef
+  630  docker container ls -a
+  631  docker run d65e84cb83ef
+  632  docker start d65e84cb83ef
+  633  docker container ls -a
+  634  docker start a59692cbd461
+  635  docker container ls -a
+  636  cd orange/
+  637  ls
+  638  vim Jenkinsfile 
+  639  docker container ls -a
+  640  docker container rm -f d65e84cb83ef
+  641  docker run -d -p 8080:8080 -p 50000:50000 -v /root/jenkins_home/:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock yasseralhwetat/jenkins:yasser
+  642  docker container ls -a
+  643  vim Jenkinsfile 
+  644  history |grep buikd
+  645  history |grep build
+  646  history |grep image
+  647  history |grep run
+  648  cat Dockerfile 
+  649  vim Jenkinsfile 
+  650  mv Jenkinsfile Jenkinsfile.old
+  651  vim Jenkinsfile
+  652  cat Jenkinsfile.old 
+  653  vim Jenkinsfile
+  654  git add .
+  655  git commit -m "Thursday Project"
+  656  git push
+  657  minikube status
+  658  minikube start --force
+  659  chmod 777 -R /var/run/docker.sock
+  660  vim Jenkinsfile
+  661  git add /
+  662  git add .
+  663  git commit "2"
+  664  git push
+  665  vim Jenkinsfile
+  666  vim Jenkinsfile.old 
+  667  git add .
+  668  git push
+  669  kubectl get node
+  670  kubectl get svc
+  671  kubectl create deployment orange_webserver --image "image " --replicas 3
+  672  git ls-files
+  673  rm Jenkinsfile.old 
+  674  git add .
+  675  git commit -m "safd"
+  676  git push
+  677  git ls-file
+  678  git ls-files
+  679  cat /root/.kube/config 
+  680  minikube status
+  681  kubectl create deployment orange_webserver --image "sulimansabha/orange-httpd:sss" --replicas 3
+  682  kubectl create deployment -n orange_webserver --image "sulimansabha/orange-httpd:sss" --replicas 3
+  683  kubectl create deployment  orangewebserver --image "sulimansabha/orange-httpd:sss" --replicas 3
+  684  kubectl get deployment
+  685  kubectl get pod
+  686  kubectl exec -it orangewebserver-6f45c688f4-2n7bv bash
+  687  history | grep expose
+  688  kubectl expose deployment orangewebserver --type NodePort --port 80
+  689  ip a
+  690  docker ls -la
+  691  docker container ls -a
+  692  kubectl get svc
+  693  kubectl get pods
+  694  kubectl exec -it orangewebserver-6f45c688f4-2n7bv bash
+  695  ll
+  696  cat index.html 
+  697  cat index.html | grep -i facebook
+  698  kubectl get pod
+  699  minikube ip
+  700  curl 192.168.49.2
+  701  kubectl get svc
+  702  curl 192.168.49.2:32044
+  703  minikube ip
+  704  httpd status
+  705  systemctl status httpd
+  706  systemctl status apache2
+  707  apt remove httpd
+  708  apt remove httpd --f
+  709  apt remove httpd --force
+  710  apt remove httpd -force
+  711  apt rm -f  httpd 
+  712  apt remove -force httpd 
+  713  apt uninstall httpd 
+  714  apt remove apache2
+  715  ip a
+  716  vim /root/.kube/config 
+  717  cat /root/.minikube/ca.crt | base64
+  718  vim /root/.kube/config 
+  719  cat /root/.minikube/profiles/minikube/client.crt
+  720  cat /root/.minikube/profiles/minikube/client.crt | base64
+  721  vim /root/.kube/config 
+  722  cat /root/.minikube/profiles/minikube/client.key | base64
+  723  vim /root/.kube/config 
+  724  cat /root/.kube/C
+  725  cat /root/.kube/config 
+  726  vim /root/.kube/config 
+  727  history
+  728  LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFb2dJQkFBS0NBUUVBeGJ4dE5PbHdn
+  729  c2VEQnZKRGJnL1BCRXRJNXRQS2tyOTZIbjdEV0F3Q0NWT1VxSTI1CmxkZjArV3U2b29NUXJqQ2Z6
+  730  RkNnYUUyYTZyeDJZcEx2cUt6UGg0dTZwOWY3bkZ1REU1UGRUN21yL3ZBdUNFZlIKc0dMaUp6aFd5
+  731  dncyK0RKRnV6SGhSTUloU2VEb1lpOFlKWDNidUlURE1KU1N1bmtLc0x1bjI1OGFkUE5kQStPMgo4
+  732  QkRxQ0ZyVFFDcmprbXpXS3NYdnQ5U2lVTC9NQXZtN0l6VjVRQzhVdzJ2aEZRNmZsR21qVFMvNnNx
+  733  QnZIWXd1CnBaMzRtc1dPTkdYQ1QwdG5jNWJWYU9Pc2JqUEpucnJMbklqZG1icmpkbkd2QVl3MEpa
+  734  RmYvUnQ5R2VlRFdISEoKTG5VbDl0OGJseHlBZ0R1WCsrTkhUODBrNW1hS09ZZFpYd1J2dVFJREFR
+  735  QUJBb0lCQUFybXFXcWFWLzZOdXpaOQowcVBWc1ViK1U0V09OWVBEbEpycnlCOHBnazg3VVYyOWVu
+  736  YTlVaDhTQmxjQlBNRXRveEdqZkVSanl0K1lCanJHCitQbG1sWVpXZUxMYUlGL3RWNXVUc2thNzZM
+  737  U0VUelZicUQ2K0pOT2Vzb0k4UjFlRmhmeWM4bHRWREhyRE1HeUIKUmlhQytzTUFaclpkNm56blFX
+  738  U2U0OUVpdzFXaElDYk51SURneXMyUExpL1VQZmNzMVQ5SHVLSlIrWHMxMVhwdgpCVVZPYnBIWFRO
+  739  MWRnaFUzaDl2QkRUemxBVGcyc0daWERzQ010QXlqM1dRTkE1NGxVRHVtVi9BazJIei9QQWRzCnJk
+  740  ditna2VMdDRVNVJPV0pQNjQ3bGN2OUxQdmlIdG1nVzVjL1V1dnRob2NvNUhzZW1KamhWU3UyUFR3
+  741  SGVNV0EKWjF4L0F4RUNnWUVBOGlJbVd6V0dpSjRTaU9kN0ZMVXJiU00rdVBpQTNGdXdmc2hmUHBO
+  742  Q0ZUNnFFaGFvUWVSMgptd25xMXk2NkxqNEtaNGFTYXcvSUhUQnUvbEZVdTMvNG1nSS9YMjlVbEU4
+  743  Ri9TUFhVWHB0cUU2ZHNRaWQ5enFuCkRZTkNRRzFzcENTR0hPb3lhK09RVnk4Vm9mdjJGS0ZnZWNk
+  744  dmFHa1ZqUXlMaWFoVU1icU1objBDZ1lFQTBROWgKSjJVamw1Z3lvRzlVZlg0dW1veVl1SjlCN290
+  745  U1NDM2lrVHFYVzhSem1kVXlNZk5VMTNUMk1HSUo4dW9TRGNDSgpCdHJRN1BhUkZoZkJEZlIwMjJk
+  746  aGpTNUtaQVRYSkJUT2pmN3ZuT0ZCcnNpL3pJMGpSbzQ4KzNTTUlWNVBSN0tKCmlOTmQ5VTdPTUtX
+  747  L29zaFJpWVJQdXgyK0hadFBwT0hrTzFqcEJ1MENnWUFYcXVyZzQzeUJBaUtCcTA3R21XYmoKUmh5
+  748  dGErejhuU0hGWXNTY2t6eFVZMG13ZHZKL2JsdUJrQmlhYkFEYTRFbVlFUGxpNmFuLzRHb1pCYzRv
+  749  ZmJ2SgpJZ3Nid3dBYmR4WDR4bllYaXNZSk81WUNaZnM2M1VyUzhVK2FpSmVqKzhYNE1aUTRJNGhL
+  750  WFZuWitZejJPMGY0CjMxdXVjd2NlUUdtclRQN2QxWVJDNlFLQmdEbG5PcXNCaDF0WnJCVUhYTEMw
+  751  bEFGVnQ1MkNCUzJGemNzSjVsc3cKTmwwNVBQQ3hiSDN3cll3WGpuM01mYVRZaHFxR0Fsb0NmVG1E
+  752  bm1UdGt0SE5ITVVkeHRob0xINzRJVWJEKzg5YgpmOW1ZdEZ0VXZlMWhsNTBJODArc09jbnp4bHNP
+  753  ZDlzOUJtQ1VDZU9ycjBuNExRTlFkRUFSczZFWGd5L240cTQxCkJJOGxBb0dBRW0zNXpic3I4Q05j
+  754  OWhaY0JxTlBJODZlYlpqMmFoaC9sZW1MeHdQdFhxNW1UWlVQdUdkcVF4aSsKUkphZnNUM0F2Zk9G
+  755  YUtvbmVyczc3TE02TVhQa3FJSHRmV1Iyb3JmY3g2SFp4MXY1cEtVYWhNOEk5RkhYZ0tvZgpJc0Fp
+  756  QjI1WGZIaXpxbnBxbHNlc0l3Y01odEVzRGVkM0dPRHRnVkU0WEJhc1cvQkk2S0k9Ci0tLS0tRU5E
+  757  IFJTQSBQUklWQVRFIEtFWS0tLS0tCg==
+  758  cat /root/.minikube/profiles/minikube/client.key
+  759  touch Certs
+  760  vim Certs
+  761  history |grep root
+  762  /root/.minikube/profiles/minikube/client.crt
+  763  history |grep base64
+  764  vim Certs 
+  765  cat /root/.minikube/ca.crt
+  766  vim /root/.kube/config 
+  767  vim Certs 
+  768  cat /root/.minikube/profiles/minikube/client.crt
+  769  vim Certs 
+  770  docker network la
+  771  docker network ls
+  772  docker container rm -f jenkins
+  773  docker container ls
+  774  docker container rm -f 8b760b967929
+  775  history |grep yasser
+  776  docker run -d -p 8080:8080 -p 50000:50000 -v /root/jenkins_home/:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock --network minikube yasseralhwetat/jenkins:yasser
+  777  cat /root/.kube/config 
+  778  kubectl create deployment clouddtest --image sulimansabha/orange-httpd:sss --replicas 3 --dry-run=client -o yaml > /root/cloudtest.yaml
+  779  cat ../cloudtest.yaml 
+  780  cp /root/.kube/config  .
+  781  pwd
+  782  mv config kubeconfig
+  783  vim /root/cloudtest.yaml 
+  784  cp /root/cloudtest.yaml .
+  785  git add .
+  786  git commit -m "cloudtest added"
+  787  git push
+  788  git ls-files
+  789  vim cloudtest.yaml 
+  790  vim Jenkinsfile 
+  791  docker container ls
+  792  docker container rm -f 1ee4f295690e
+  793  which kubeconfig 
+  794  which kubectl
+  795  whitch kubectl
+  796  whitch
+  797  which
+  798  which kubectl
+  799  which minikube
+  800  echo $kubectl
+  801  minikube status
+  802  kubectl get pod
+  803  {which minikube) /usr/local/bin/kubectl
+  804  (which minikube) /usr/local/bin/kubectl
+  805  /usr/local/bin/kubectl
+  806  ln -s $(which minikube) /usr/local/bin/kubectl
+  807  which kubectl
+  808  docker run -d -p 8080:8080 -p 50000:50000 -v /root/jenkins_home/:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock -v /usr/local/bin/kubectl:/usr/local/bin/kubectl  --network minikube yasseralhwetat/jenkins:yasser
+  809  vim Jenkinsfile 
+  810  git add 
+  811  git add .
+  812  git commit -m "sfa"
+  813  git push
+  814  vim Jenkinsfile 
+  815  git add .
+  816  git commit -n "dasf"
+  817  git commit -n "dasf" .
+  818  git commit -m "dasf" .
+  819  git push
+  820  vim Jenkinsfile 
+  821  git add .
+  822  git commit -m "fasd"
+  823  git push
+  824  vim Jenkinsfile 
+  825  git push
+  826  git add
+  827  git add .
+  828  git commit -m "sad"
+  829  git push
+  830  vim Jenkinsfile 
+  831  git add .
+  832  git commit -m "saf"
+  833  git push
+  834  kubectl edit  deployments.app cloudtest
+  835  kubectl edit  deployment.app cloudtest
+  836  kubectl edit  deployment.apps cloudtest
+  837  kubectl edit  deployments.apps cloudtest
+  838  kubectl get deployments
+  839  vim cloudtest.yaml 
+  840  git add .
+  841  git commit -m "sadf"
+  842  git push
+  843  kubectl get deployments
+  844  kubectl get pods
+  845  history > DevopsCourseCommandsHistory.txt

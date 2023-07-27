@@ -40,5 +40,4 @@ stage('Build to Kubernetes') {
 
 
     }
-}
 

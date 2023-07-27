@@ -30,7 +30,7 @@ stage('Build to Kubernetes') {
             steps {
                 script{
                    
-		sh 'minikube kubectl apply . --kubeconfig kubeconfig '
+		sh 'minikube kubectl apply -f . --kubeconfig kubeconfig '
 			 }
                 }
             }

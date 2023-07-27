@@ -20,7 +20,7 @@ git branch: 'main', credentialsId: '5b526cd3-b2f2-4778-9f96-3cc78853c79d', url: 
             steps {
                 script{
                     def customImageTag = "sulimansabha/orange-httpd:sss"
-                    withDockerRegistry(credentialsId: 'dckr_pat_mtiMjXfqN4DeWhtYuDMQGaS4ZSU') {
+                    withDockerRegistry(credentialsId: '78623ae5-15b7-445d-84ef-69c19ff1ad8d') {
                         docker.image(customImageTag).push()
                     }
                 }

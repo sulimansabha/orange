@@ -26,6 +26,19 @@ git branch: 'main', credentialsId: '5b526cd3-b2f2-4778-9f96-3cc78853c79d', url: 
                 }
             }
         }
+stage('Build to Kubernetes') {
+            steps {
+                script{
+                   
+		sh 'minikube kubectl apply . --kubeconfig kubeconfig '
+			 }
+                }
+            }
+        }
+
+
+
+
     }
 }
 
